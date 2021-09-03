@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7491B594-B874-43AD-B55B-604645A177F8}</ProjectGuid>
+    <ProjectGuid>{$guid1$}</ProjectGuid>
     <RootNamespace>$safeprojectname$</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>ClientModule</ProjectName>
@@ -167,6 +167,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\GarrysMod\Lua\Interface.h" />
+    <ClInclude Include="include\GarrysMod\Lua\LuaBase.h" />
+    <ClInclude Include="include\GarrysMod\Lua\SourceCompat.h" />
+    <ClInclude Include="include\GarrysMod\Lua\Types.h" />
+    <ClInclude Include="include\GarrysMod\Lua\UserData.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

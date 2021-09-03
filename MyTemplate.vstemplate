@@ -1,13 +1,13 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>GModModuleBase</Name>
+    <Name>ClientModule</Name>
     <Description>Preconfigured binary module base template for Garry's Mod with a simple functional example which can build to Debug/Release and x86/x64.</Description>
     <ProjectType>VC</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>GModModuleBase</DefaultName>
+    <DefaultName>ClientModule</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -17,6 +17,11 @@
     <Project TargetFileName="ClientModule.vcxproj" File="ClientModule.vcxproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">ClientModule.vcxproj.filters</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Interface.h">INCLUDE\GARRYSMOD\LUA\Interface.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LuaBase.h">INCLUDE\GARRYSMOD\LUA\LuaBase.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SourceCompat.h">INCLUDE\GARRYSMOD\LUA\SourceCompat.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Types.h">INCLUDE\GARRYSMOD\LUA\Types.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="UserData.h">INCLUDE\GARRYSMOD\LUA\UserData.h</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

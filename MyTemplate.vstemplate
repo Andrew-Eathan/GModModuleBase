@@ -1,21 +1,21 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>GModBinary</Name>
-    <Description>GMod binary module template project for building to Windows (x86/x64) (set up for clientside by default)</Description>
+    <Name>GModModuleBase</Name>
+    <Description>Preconfigured binary module base template for Garry's Mod with a simple functional example which can build to Debug/Release and x86/x64.</Description>
     <ProjectType>VC</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>GModBinary</DefaultName>
+    <DefaultName>GModModuleBase</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
-    <Project TargetFileName="Client.vcxproj" File="Client.vcxproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">Client.vcxproj.filters</ProjectItem>
+    <Project TargetFileName="ClientModule.vcxproj" File="ClientModule.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">ClientModule.vcxproj.filters</ProjectItem>
       <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
     </Project>
   </TemplateContent>
